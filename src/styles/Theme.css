@@ -1,0 +1,130 @@
+/* Base theme variables */
+:root {
+  /* Common variables for both themes */
+  --transition-speed: 0.3s;
+}
+
+/* Dark theme (default) */
+:root, .dark-theme {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --accent-color: #00FFFF;
+  --accent-hover: #00CCCC;
+  --border-color: #404040;
+  --header-bg: #1a1a1a;
+  --header-border: #2d2d2d;
+  --input-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Light theme */
+.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --bg-tertiary: #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-tertiary: #6b7280;
+  --accent-color: #00FFFF;
+  --accent-hover: #00CCCC;
+  --border-color: #d1d5db;
+  --header-bg: #ffffff;
+  --header-border: #e5e7eb;
+  --input-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Apply theme variables to elements */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.nodejs-header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
+}
+
+.logo-text {
+  color: var(--text-primary);
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+
+.search-input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.search-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.search-shortcut {
+  color: var(--text-tertiary);
+}
+
+.theme-toggle,
+.language-toggle,
+.mobile-menu-btn,
+.github-link {
+  color: var(--text-secondary);
+}
+
+.theme-toggle:hover,
+.language-toggle:hover,
+.mobile-menu-btn:hover,
+.github-link:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Hero section theme */
+.hero-section {
+  background-color: var(--bg-primary);
+}
+
+.hero-title {
+  color: var(--text-primary);
+}
+
+.hero-description {
+  color: var(--text-secondary);
+}
+
+.btn-secondary {
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.version-note {
+  color: var(--text-tertiary);
+}
+
+/* Card and content sections */
+.card, .content-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}

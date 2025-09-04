@@ -1,0 +1,191 @@
+/* Updated SignUp.css for the simplified auth page */
+
+.auth-container {
+  min-height: 100vh;
+  background: #0a0a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.auth-logo {
+  margin-bottom: 2rem;
+}
+
+.auth-logo img {
+  height: 80px;
+  width: auto;
+}
+
+.auth-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 2rem;
+}
+
+.email-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a2e;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #333;
+}
+
+.email-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.email-input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+}
+
+.email-input-container input:focus {
+  outline: none;
+}
+
+.submit-arrow {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-arrow:hover {
+  background: #1d4ed8;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #444;
+}
+
+.separator span {
+  padding: 0 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.google-btn {
+  width: 100%;
+  background-color: white;
+  color: #333;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.google-btn:hover {
+  background-color: #f1f1f1;
+}
+
+.benefits-section {
+  max-width: 450px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.benefits-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+}
+
+.benefit-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.terms-footer {
+  max-width: 450px;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.terms-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.terms-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .auth-title {
+    font-size: 1.5rem;
+  }
+  
+  .auth-form {
+    max-width: 100%;
+  }
+  
+  .email-input-container {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .submit-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+

@@ -1,0 +1,224 @@
+/* Node.js Header Styles */
+.nodejs-header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2d2d2d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 100px; /* Increased from 90px */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  margin-left: -10px; /* Reduced left margin to accommodate larger logo */
+  /* Ensure logo is always visible */
+  min-width: 90px; /* Increased minimum width */
+  z-index: 1001; /* Higher z-index to ensure visibility */
+}
+
+.logo-image {
+  width: auto;
+  height: 85px; /* Increased from 70px */
+  object-fit: contain;
+  /* Ensure minimum size for small screens */
+  min-height: 50px; /* Increased from 40px */
+  min-width: 50px; /* Increased from 40px */
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.contribute-link,
+.certification-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.external-icon {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  padding-right: 4rem;
+  font-size: 0.875rem;
+  width: 200px;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #00FFFF;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-shortcut {
+  position: absolute;
+  right: 0.75rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.theme-toggle,
+.language-toggle,
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  color: #d1d5db;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover,
+.language-toggle:hover,
+.mobile-menu-btn:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.github-link {
+  color: #d1d5db;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.github-link:hover {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 1.25rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .search-input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 1rem;
+    height: 80px; /* Increased from 70px */
+  }
+  
+  .logo {
+    margin-right: auto; /* Push other elements to the right */
+  }
+  
+  .logo-image {
+    height: 65px; /* Increased from 50px */
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    margin-left: auto; /* Push to the right */
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .search-container {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    height: 70px; /* Increased from 60px */
+  }
+  
+  .logo-image {
+    height: 55px; /* Increased from 40px */
+  }
+  
+  .header-actions {
+    gap: 0.5rem;
+  }
+  
+  /* Ensure logo is still visible */
+  .logo {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
