@@ -14,6 +14,8 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Use this Site as a Sample for your build. https://www.withsandra.dev/ 
 
+Domain: icyberpathx.netlify.app
+
 ==========================================================================
 
 Nice — let’s build this end-to-end. Below is a practical, step-by-step implementation plan so your Netlify frontend talks cleanly to a scalable AWS backend. I’ll give you two recommended backend approaches (serverless + containers), commands/snippets you can copy, CORS/auth tips, CI/CD notes, and a short checklist at the end.
