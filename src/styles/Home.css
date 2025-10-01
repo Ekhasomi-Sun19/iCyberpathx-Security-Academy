@@ -6,16 +6,19 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
   background-color: #0f0f0f;
   color: #ffffff;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .nodejs-home {
   min-height: 100vh;
   background-color: #0f0f0f;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-
-

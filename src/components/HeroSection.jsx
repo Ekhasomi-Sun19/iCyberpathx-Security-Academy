@@ -55,11 +55,7 @@ function HeroSection() {
             </form>
           </div>
 
-          <div className="hero-buttons">
-            <button className="btn-primary">Get Started</button>
-            <button className="btn-secondary">About the Author →</button>
-            <span className="version-note">Sunday Ekhasomi</span>
-          </div>
+          {/* Remove the hero-buttons section */}
         </div>
       </div>
     </section>
