@@ -18,10 +18,10 @@
   height: 300px;
   background: conic-gradient(
     from 0deg at 50% 50%,
-    #00FFFF 0%, 
-    #0088FF 25%, 
-    #6600FF 50%, 
-    #041c33 75%, 
+    #00ffff 0%,
+    #0088ff 25%,
+    #6600ff 50%,
+    #041c33 75%,
     #020f1a 100%
   );
   border-radius: 50%;
@@ -56,7 +56,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #00FFFF;
+  background-color: #00ffff;
   color: #000;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -69,7 +69,7 @@
 }
 
 .jsconf-badge:hover {
-  background-color: #00CCCC;
+  background-color: #00cccc;
 }
 
 .jsconf-text {
@@ -114,7 +114,7 @@
 }
 
 .btn-primary {
-  background-color: #00FFFF;
+  background-color: #00ffff;
   color: #000;
   border: none;
   padding: 0.875rem 1.5rem;
@@ -128,7 +128,7 @@
 }
 
 .btn-primary:hover {
-  background-color: #00CCCC;
+  background-color: #00cccc;
 }
 
 .btn-secondary {
@@ -147,7 +147,7 @@
 
 .btn-secondary:hover {
   background-color: #2d2d2d;
-  border-color: #00FFFF;
+  border-color: #00ffff;
   color: #fff;
 }
 
@@ -161,29 +161,29 @@
   .hero-section {
     padding: 2rem 0 4rem;
   }
-  
+
   .hero-container {
     padding: 0 1rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     text-align: center;
   }
-  
+
   .version-note {
     margin-left: 0;
     margin-top: 0.5rem;
@@ -191,7 +191,73 @@
   }
 }
 
+/* Email Subscription Styles */
+.email-subscription {
+  margin: 2rem 0;
+}
 
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+.subscription-input-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 30px;
+  padding: 0.5rem;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
 
+.subscription-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  outline: none;
+}
 
+.subscription-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subscribe-btn {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #00cccc;
+}
+
+@media (max-width: 768px) {
+  .subscription-input-container {
+    max-width: 100%;
+    margin: 0 1rem;
+  }
+
+  .subscription-input {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .subscribe-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
