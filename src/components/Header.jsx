@@ -5,17 +5,19 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img
-          src="/iCyberpathX/images/FirstLogo.png"
-          alt="iCyberpathX Logo"
-          className="logo-image"
-        />
+        <Link to="/">
+          <img
+            src="/iCyberpathX/images/FirstLogo.png"
+            alt="iCyberpathX Logo"
+            className="logo-image"
+          />
+        </Link>
       </div>
       <div className="header-container">
         <div className="header-menu">
           <a href="#about">About</a>
           <a href="#article">Article</a>
-          <a href="#blog">Blog</a>
+          <Link to="/courses">Courses</Link>
           <a href="#contributor">Contributor</a>
         </div>
       </div>

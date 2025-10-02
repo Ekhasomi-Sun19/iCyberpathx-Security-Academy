@@ -21,14 +21,10 @@
   position: relative;
 }
 
-.logo {
+.logo a {
   display: flex;
   align-items: center;
-  flex: 0 0 auto;
-  position: absolute;
-  left: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
+  text-decoration: none;
 }
 
 .logo-image {

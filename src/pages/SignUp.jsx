@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import "../styles/SignUp.css";
 
 function SignUp() {
@@ -43,7 +44,9 @@ function SignUp() {
   return (
     <div className="auth-container">
       <div className="auth-logo">
-        <img src="/iCyberpathX/images/FirstLogo.png" alt="iCyberpathX Logo" />
+        <Link to="/">
+          <img src="/iCyberpathX/images/FirstLogo.png" alt="iCyberpathX Logo" />
+        </Link>
       </div>
 
       <h1 className="auth-title">

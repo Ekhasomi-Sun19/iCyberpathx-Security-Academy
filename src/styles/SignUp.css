@@ -12,13 +12,20 @@
   text-align: center;
 }
 
-.auth-logo {
-  margin-bottom: 2rem;
+.auth-logo a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .auth-logo img {
   height: 80px;
   width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.auth-logo img:hover {
+  transform: scale(1.05);
 }
 
 .auth-title {
@@ -174,18 +181,17 @@
   .auth-title {
     font-size: 1.5rem;
   }
-  
+
   .auth-form {
     max-width: 100%;
   }
-  
+
   .email-input-container {
     padding: 0.4rem 0.8rem;
   }
-  
+
   .submit-arrow {
     width: 36px;
     height: 36px;
   }
 }
-
