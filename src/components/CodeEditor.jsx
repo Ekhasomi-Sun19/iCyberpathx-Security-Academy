@@ -128,7 +128,7 @@ if (isMainThread) {
 
         <div className="code-content">
           <div className="code-header">
-            <span className="language-label">JavaScript</span>
+            <span className="language-label">Cheat Sheet</span>
             <button className="copy-button" onClick={handleCopy}>
               {copied ? (
                 <>

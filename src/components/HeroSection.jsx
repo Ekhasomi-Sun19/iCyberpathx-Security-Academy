@@ -20,20 +20,18 @@ function HeroSection() {
       <div className="hero-container w-full">
         <div className="hero-content">
           <Link to="/get-started" className="jsconf-badge">
-            <span className="jsconf-text">PathX</span>
-            <span className="jsconf-arrow">→</span>
-            <span className="jsconf-link">Subscribe</span>
+            <span className="jsconf-link">Sponsors</span>
           </Link>
 
           <h1 className="hero-title">
-            Where future cybersecurity <br />
-            leaders are made
+            From Learners to Leaders <br />
+            in Cybersecurity.
           </h1>
 
           <p className="hero-description">
-            Node.js® is a free, open-source, cross-platform JavaScript runtime
-            environment that lets developers create servers, web apps, command
-            line tools and scripts.
+            Build the skills that matter in today’s digital world. Join a
+            growing community dedicated to transforming learners into today’s
+            cybersecurity leaders.
           </p>
 
           {/* Email Subscription Section */}

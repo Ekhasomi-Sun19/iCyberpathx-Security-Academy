@@ -59,7 +59,7 @@
   background-color: #00ffff;
   color: #000;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 7px;
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -72,21 +72,12 @@
   background-color: #00cccc;
 }
 
-.jsconf-text {
-  font-weight: 600;
-}
-
-.jsconf-arrow {
-  font-size: 0.75rem;
-}
-
 .jsconf-link {
   color: inherit;
 }
 
 .jsconf-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .hero-title {
@@ -96,6 +87,11 @@
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: -0.025em;
+  background: linear-gradient(5deg, #55f3f3, #f4f6f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
 }
 
 .hero-description {
@@ -104,6 +100,8 @@
   line-height: 1.6;
   margin-bottom: 2.5rem;
   max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-buttons {
