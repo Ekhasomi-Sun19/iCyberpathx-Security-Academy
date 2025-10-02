@@ -18,7 +18,7 @@ Domain: icyberpathx.netlify.app
 
 ==========================================================================
 
-Nice — let’s build this end-to-end. Below is a practical, step-by-step implementation plan so your Netlify frontend talks cleanly to a scalable AWS backend. I’ll give you two recommended backend approaches (serverless + containers), commands/snippets you can copy, CORS/auth tips, CI/CD notes, and a short checklist at the end.
+```Nice — let’s build this end-to-end. Below is a practical, step-by-step implementation plan so your Netlify frontend talks cleanly to a scalable AWS backend. I’ll give you two recommended backend approaches (serverless + containers), commands/snippets you can copy, CORS/auth tips, CI/CD notes, and a short checklist at the end.
 
 I’ll assume your frontend repo is already on Netlify. If you want me to tailor commands to a specific stack (Create-React-App, Vite, Next.js, etc.) say which — otherwise I’ll keep examples generic.
 
