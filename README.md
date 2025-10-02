@@ -253,7 +253,7 @@ AWS Documentation
 
  Add CI/CD for backend and monitoring.
 
- `Fixed header link - Changed the "Courses" anchor tag to a React Router Link
+ ```Fixed header link - Changed the "Courses" anchor tag to a React Router Link
 Authentication context - Created AuthContext to manage login state
 Course access control - Users can browse courses but need to login to access individual courses
-Redirect logic - Non-logged-in users are redirected to signup/login page with the intended course URL stored`
+Redirect logic - Non-logged-in users are redirected to signup/login page with the intended course URL stored
