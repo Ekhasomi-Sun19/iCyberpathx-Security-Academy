@@ -27,6 +27,8 @@ Netlify Docs
 Backend (recommended for large traffic & dynamic behavior): AWS Lambda + Amazon API Gateway (serverless HTTP API) or ECS Fargate (containerized) — Lambda + API Gateway auto-scales and is a common choice for high throughput APIs. 
 AWS Documentation
 
+Use this Site as a Sample for your build. https://www.withsandra.dev/ 
+
 Database: DynamoDB (NoSQL, built for scaling) or RDS/Aurora (relational — more operational overhead). DynamoDB supports auto scaling for throughput. 
 AWS Documentation
 
