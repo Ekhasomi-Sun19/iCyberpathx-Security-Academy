@@ -14,7 +14,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Use this Site as a Sample for your build. https://www.withsandra.dev/ 
 
-Domain: icyberpathx.netlify.app
+Domain: https://www.icyberpathx.netlify.app
 
 ==========================================================================
 
