@@ -1,0 +1,71 @@
+What if i'm using the teachable tool to create my course curriculum and lesson video, how can I then connect it to my website to make it available to users using my website?
+
+https://teachable.com/?src=school_footer 
+
+Great question 👍
+
+If you’re using Teachable to actually host your courses, curriculum, and videos, you don’t have to rebuild the entire course system from scratch — instead, you integrate Teachable with your own website. Here are the main ways you can do that:
+
+🔗 1. Direct Linking / Embedding
+
+Each Teachable course/lesson has its own course URL.
+
+On your React website, you can:
+
+Add buttons like “View Course” → send users to your Teachable course page.
+
+Or, if you want it inside your website, you can use an iframe embed to display the course inside your own site.
+
+<iframe 
+  src="https://your-school.teachable.com/p/your-course" 
+  width="100%" 
+  height="800px" 
+  style={{ border: "none" }}
+/>
+
+
+This is the quickest integration, but it feels less “native.”
+
+🔑 2. Custom Domain Integration
+
+Teachable allows you to map your own domain (e.g., courses.mywebsite.com) so your users feel like they’re still inside your brand.
+
+You can configure Teachable so that all course access is on courses.mywebsite.com, while your main React website remains separate (www.mywebsite.com).
+
+⚡ 3. Single Sign-On (SSO)
+
+If you want users to log in once on your React site and automatically be logged into Teachable:
+
+Teachable supports SSO via OAuth/JWT for advanced plans.
+
+You’d authenticate users on your website, then pass them into Teachable with an SSO token.
+
+This way, users don’t need two accounts.
+
+📡 4. Teachable API / Zapier
+
+Teachable has an API that lets you:
+
+Enroll users in courses programmatically.
+
+Fetch course info.
+
+Manage student accounts.
+
+Example: A user signs up on your React site → backend calls Teachable API → user is automatically created in your Teachable school and enrolled in a course.
+
+Alternatively, you can use Zapier to connect your site to Teachable without heavy coding.
+
+🎯 Which to choose?
+
+If you want fastest setup → use direct linking or iframe embedding.
+
+If you want branding under your own domain → use custom domain integration.
+
+If you want full control & seamless UX → use Teachable API + SSO (more work, but professional).
+
+👉 Do you want me to show you a React example where clicking a course in your own curriculum UI will either:
+
+Open the Teachable course in an iframe, OR
+
+Redirect the user to your Teachable-hosted course page?
